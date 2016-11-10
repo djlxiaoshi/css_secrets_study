@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#silverback {
+			  position: relative;
+			  z-index: 1;
+			  min-width: 200px;
+			  min-height: 200px;
+			  padding: 120px 200px 50px;
+			  background: #d3ff99 url(http://nicolasgallagher.com/multiple-backgrounds-and-borders-with-css2/demo/vines-back.png) -10% 0 repeat-x;
+			}
+			
+			#silverback:before,
+			#silverback:after {
+			  position: absolute;
+			  z-index: -1;
+			  top: 0;
+			  left: 0;
+			  right: 0;
+			  bottom: 0;
+			  padding-top: 100px;
+			}
+			
+			#silverback:before {
+			  content: url(gorilla-1.png);
+			  padding-left: 3%;
+			  text-align: left;
+			  background: transparent url(vines-mid.png) 300% 0 repeat-x;
+			}
+			
+			#silverback:after {
+			  content: url(gorilla-2.png);
+			  padding-right: 3%;
+			  text-align: right;
+			  background: transparent url(vines-front.png) 70% 0 repeat-x;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="silverback">[content]</div>
+	</body>
+</html>
