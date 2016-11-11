@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.demo1{
+				width: 100px;
+				height: 50px;
+				background: lightblue;
+				transform: skewX(-45deg);
+				margin: 50px;
+			}
+			
+			.demo2{
+				width: 100px;
+				padding: 20px 0;
+				text-align: center;
+				position: relative;
+				margin: 50px;
+				
+				
+			}
+			
+			.demo2:before{
+				content: "";
+				position: absolute;
+				z-index: -1;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: lightblue;	
+				transform: skewX(-45deg);			
+			}
+		</style>
+	</head>
+	<body>
+		<div class="demo1">
+			这是文字
+		</div>
+		
+		<br /><br />
+		
+		<div class="demo2">
+			这是文字
+		</div>
+		
+		
+	</body>
+</html>

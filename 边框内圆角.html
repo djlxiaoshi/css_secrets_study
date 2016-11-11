@@ -13,9 +13,34 @@
 				box-shadow: 0 0 0 8px lightblue;
 				border: solid 8px lightblue;
 			}
+			
+			.demo2{
+				width: 200px;
+				height: 100px;
+				background: lightcoral;
+				border-radius: 20px;
+				outline: 10px solid lightblue;
+				position: relative;
+				
+				
+			}
+			
+			.demo2:after{
+				content: "";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: -1;
+				background: lightblue;
+			}
 		</style>
 	</head>
 	<body>
 		<div class="demo"></div>
+		
+		<br /><br />
+		<div class="demo2"></div>
 	</body>
 </html>
