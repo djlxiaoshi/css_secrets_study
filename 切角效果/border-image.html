@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.container{
+				margin: 100px auto;
+			}
+			
+			.demo{
+				width: 200px;
+				height: 200px;
+				background: transparent;
+				border: 54px solid red;
+			 -webkit-border-image: url(img/border-img.png) 27 27 54 54 round stretch;
+		     border-image: url(img/border-img.png) 27 27 54 54 round stretch;
+			}
+			
+			.demo2{
+			    width:100px; 
+			    height: 100px;
+			    background: green;
+			    border:double red 20px; 
+			    -webkit-border-image:url(img/rounded_corner.png) 20/10; 
+			    border-image:url(img/rounded_corner.png) 20/10; 
+			    text-align:center; 
+			    color:white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="demo"></div>
+			
+			<div class="demo2">
+				这是文字
+			</div>
+		</div>
+	</body>
+</html>

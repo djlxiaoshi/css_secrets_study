@@ -1,0 +1,40 @@
+@mixin beveled-corners($bg,$tl:10px,$tr:$tl,$bl:$tl,$br:$tr){
+    background: $bg;
+    background: 
+        linear-gradient(135deg,transparent $tl,$bg 0) top left,
+        linear-gradient(-135deg,transparent $tr,$bg 0) top right,
+        linear-gradient(45deg,transparent $bl,$bg 0) bottom left,
+        linear-gradient(-45deg,transparent $br,$bg 0) bottom right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    
+   
+    
+}
+
+.test{
+    width: 200px;
+    height: 200px;
+    @include beveled-corners(yellow,15px,40px)
+}
+
+@mixin circle-corners($bg,$tl:10px,$tr:$tl,$bl:$tl,$br:$tr){
+    background: $bg;
+    background: 
+        radial-gradient(circle at top left,transparent $tl,$bg 0) top left,
+        radial-gradient(circle at top right,transparent $tr,$bg 0) top right,
+        radial-gradient(circle at bottom left,transparent $bl,$bg 0) bottom left,
+        radial-gradient(circle at bottom right,transparent $br,$bg 0) bottom right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+
+.test2{
+    width: 200px;
+    height: 200px;
+    @include circle-corners(blue,10px,10px);
+    
+}
+
+

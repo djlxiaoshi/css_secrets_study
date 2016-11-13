@@ -1,0 +1,17 @@
+.test {
+  width: 200px;
+  height: 200px;
+  background: yellow;
+  background: linear-gradient(135deg, transparent 15px, yellow 0) top left, linear-gradient(-135deg, transparent 40px, yellow 0) top right, linear-gradient(45deg, transparent 15px, yellow 0) bottom left, linear-gradient(-45deg, transparent 40px, yellow 0) bottom right;
+  background-size: 50% 50%;
+  background-repeat: no-repeat; }
+
+.test2 {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  background: radial-gradient(circle at top left, transparent 10px, blue 0) top left, radial-gradient(circle at top right, transparent 10px, blue 0) top right, radial-gradient(circle at bottom left, transparent 10px, blue 0) bottom left, radial-gradient(circle at bottom right, transparent 10px, blue 0) bottom right;
+  background-size: 50% 50%;
+  background-repeat: no-repeat; }
+
+/*# sourceMappingURL=index.css.map */
