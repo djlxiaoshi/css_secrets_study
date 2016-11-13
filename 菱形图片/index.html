@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		.container{
+			margin: 100px;
+		}
+			.demo{
+				width: 100px;
+				overflow: hidden;
+				transform: rotate(45deg);
+			}
+			
+			.demo > img{
+				max-width:100% ;
+				transform: rotate(-45deg) scale(1.42);
+				
+			}
+			
+			.demo2{
+				width: 100px;
+				height: 100px;
+				background: url(imgres.jpg);
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.demo2:before{
+				content: "";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				transform: rotate(45deg);
+				background: red;
+				
+			}
+			
+		
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="demo">
+				<img src="imgres.jpg"/>
+			</div>
+			
+			<div class="demo2"></div>
+		</div>
+		
+	</body>
+</html>
