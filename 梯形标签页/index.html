@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			html{
+				font-size:  130%/2;
+			}
+			
+			.container{
+				margin: 100px;
+			}
+			.demo1{
+				padding: .3rem .1rem 0;
+				background: lightcoral;
+				position: relative;
+				display: inline-block;
+			}
+			
+			.demo1:before,.demo1:after{
+				content: '';
+				width: 2rem;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				background:lightcoral;
+			}
+			
+			.demo1:before{
+				right: 100%;
+				background: linear-gradient(106deg,transparent 15px,lightcoral 0);
+			}
+			
+			.demo1:after{
+				left: 100%;
+				background: linear-gradient(-106deg,transparent 15px,lightcoral 0);
+			}
+			
+			.demo2{
+				width: 100px;
+				height: 50px;
+				background: lightcoral;
+				position: relative;
+				
+				border: 2px solid red;
+			}
+			
+			.demo2:before,.demo2:after{
+				content: '';
+				position: absolute;
+				border-top: 50px solid transparent;
+			}
+			.demo2:before{
+				right: 100%;
+				border-right: 20px solid lightcoral;
+			}
+			
+			.demo2:after{
+				left: 100%;
+				border-left: 20px solid lightcoral;
+			}
+			
+			.demo3{
+				width: 30px;
+				height: 20px;
+				border-top: 15px solid #000;
+				border-left: 15px solid transparent;
+				border-right: 15px solid transparent;
+				border-bottom: 15px solid transparent;
+			}
+			
+			.demo4{
+				display: inline-block;
+				position: relative;
+				padding: .5em 1em 0;
+				z-index: 1;
+				margin: 0 -.3em;
+			}
+			
+			.demo4:after{
+				content: '';
+				position: absolute;
+				background: lightcoral;
+				transform: perspective(.5em) rotateX(5deg) scaleY(0.74);
+				transform-origin: bottom;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: -1;
+				
+				border-radius: 5px;
+				border: 2px solid red;
+				border-bottom: none ;
+				
+				
+			}
+			
+			nav{
+				font-size: 0;
+			}
+			nav a{
+				font-size: 16px;
+				margin: 5px;
+				display: inline-block;
+			}
+			
+			.selected{
+				z-index: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="demo1">
+				这里又文字
+			</div>
+			<br />
+			<br /><br /><br /><br />
+			<div class="demo2">
+				这里又文字
+			</div>
+			<br />
+			<div class="demo3"></div>
+			<br />
+			<div class="demo4">
+				这是文字
+			</div>
+			
+			
+			<nav>
+				<a class="demo4">1</a>
+				<a class="demo4 selected">2</a>
+				<a class="demo4">3</a>
+				<a class="demo4">4</a>
+			</nav>
+		</div>
+	</body>
+</html>
